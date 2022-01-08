@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_acc_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/im_acc"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/circle" />
+
+    <TextView
+        android:id="@+id/tv_acc_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Tomas Roy"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical|start"
+        android:layout_marginStart="20dp"/>
+
+</LinearLayout>
