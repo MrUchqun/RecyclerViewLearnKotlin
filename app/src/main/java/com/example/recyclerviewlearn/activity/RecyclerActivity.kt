@@ -12,7 +12,7 @@ import java.util.ArrayList
 
 class RecyclerActivity : AppCompatActivity() {
 
-    lateinit var context: Context
+    private lateinit var context: Context
     private lateinit var recyclerView: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
