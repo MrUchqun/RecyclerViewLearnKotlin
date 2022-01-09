@@ -26,17 +26,15 @@ class RecyclerActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.view_recycler)
         recyclerView.layoutManager = GridLayoutManager(context,1)
 
-        val members: ArrayList<User> = ArrayList<User>()
-        val user = User(R.drawable.im_acc,"Tomas Roy")
-
-        addUser(members,user)
-        refreshAdapter(members)
+        refreshAdapter(getMembersList())
     }
 
-    private fun addUser(members: ArrayList<User>, user: User) {
-        for (i in 0..20){
-            members.add(user)
+    private fun getMembersList(): ArrayList<User> {
+        val members: ArrayList<User> = ArrayList<User>()
+        for (i in 0..14){
+            members.add(User(R.drawable.im_acc,"JackRicher_${i+1}"))
         }
+        return members
     }
 
     private fun refreshAdapter(members: ArrayList<User>) {

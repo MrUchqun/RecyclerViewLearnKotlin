@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:background="@color/teal_700"
+    android:background="#D3D3D3"
     android:padding="10dp"
-    android:layout_margin="10dp">
+    android:layout_margin="5dp">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/iv_acc_photo"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
             app:srcCompat="@drawable/im_acc"
             android:scaleType="centerCrop"
             app:shapeAppearanceOverlay="@style/circle" />
@@ -21,9 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Tomas Roy"
-            android:textSize="23sp"
-            android:textColor="@color/white"
-            android:fontFamily="casual"
+            android:textSize="17sp"
+            android:textColor="@color/black"
             android:gravity="center_vertical|start"
             android:layout_marginStart="20dp"/>
 
