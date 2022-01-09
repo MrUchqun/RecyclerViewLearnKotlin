@@ -6,6 +6,8 @@
         <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
         <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/activity_recycler.xml" value="0.22314814814814815" />
         <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/item_user_view.xml" value="0.27447916666666666" />
+        <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/item_user_view_false.xml" value="0.6" />
+        <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/item_user_view_true.xml" value="0.536" />
       </map>
     </option>
   </component>

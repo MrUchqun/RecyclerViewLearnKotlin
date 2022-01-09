@@ -11,13 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerViewLearn">
         <activity
-            android:name=".activity.RecyclerActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:name=".activity.RecyclerMultipleActivity"
             android:exported="false" />
         <activity
+            android:name=".activity.RecyclerBasicActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
             android:name=".activity.MainActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

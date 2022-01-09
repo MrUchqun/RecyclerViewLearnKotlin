@@ -1,6 +1,5 @@
 package com.example.recyclerviewlearn.activity
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,14 +17,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        buttonCallView = findViewById(R.id.btn_call_view)
+        buttonCallView = findViewById(R.id.btn_call_basic)
         buttonCallView.setOnClickListener {
             callRecyclerView()
         }
     }
 
     private fun callRecyclerView() {
-        val intent = Intent(this@MainActivity, RecyclerActivity::class.java)
+        val intent = Intent(this@MainActivity, RecyclerBasicActivity::class.java)
         startActivity(intent)
     }
 

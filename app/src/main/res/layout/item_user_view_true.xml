@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#D3D3D3"
+    android:padding="10dp"
+    android:layout_margin="5dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_acc_photo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            app:srcCompat="@drawable/im_acc"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/circle" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="3dp"
+            android:layout_gravity="bottom|end"
+            android:scaleType="centerCrop"
+            android:background="#00FF19"
+            app:shapeAppearanceOverlay="@style/circle"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_acc_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Tomas Roy"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:fontFamily="cursive"
+        android:gravity="center_vertical|start"
+        android:layout_marginStart="20dp"/>
+
+</LinearLayout>

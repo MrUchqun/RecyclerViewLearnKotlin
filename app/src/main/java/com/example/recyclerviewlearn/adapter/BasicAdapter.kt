@@ -10,10 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerviewlearn.R
 import com.example.recyclerviewlearn.model.User
 
-class RecyclerAdapter(var context: Context, var members: ArrayList<User>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class BasicAdapter(var context: Context, var members: ArrayList<User>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_user_view,parent,false)
+        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_user_view_false,parent,false)
         return MemberViewHolder(view)
     }
 

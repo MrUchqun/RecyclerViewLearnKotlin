@@ -6,18 +6,18 @@ import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerviewlearn.R
-import com.example.recyclerviewlearn.adapter.RecyclerAdapter
+import com.example.recyclerviewlearn.adapter.BasicAdapter
 import com.example.recyclerviewlearn.model.User
 import java.util.ArrayList
 
-class RecyclerActivity : AppCompatActivity() {
+class RecyclerBasicActivity : AppCompatActivity() {
 
     private lateinit var context: Context
     private lateinit var recyclerView: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recycler)
+        setContentView(R.layout.activity_recycler_basic)
         initView()
     }
 
@@ -38,7 +38,7 @@ class RecyclerActivity : AppCompatActivity() {
     }
 
     private fun refreshAdapter(members: ArrayList<User>) {
-        val adapter = RecyclerAdapter(context,members)
+        val adapter = BasicAdapter(context,members)
         recyclerView.adapter = adapter
     }
 }
