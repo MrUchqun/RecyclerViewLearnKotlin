@@ -36,9 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Tomas Roy"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textColor="@color/black"
-        android:fontFamily="cursive"
         android:gravity="center_vertical|start"
         android:layout_marginStart="20dp"/>
 

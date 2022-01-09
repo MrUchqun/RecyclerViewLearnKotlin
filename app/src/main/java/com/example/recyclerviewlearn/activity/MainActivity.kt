@@ -1,5 +1,6 @@
 package com.example.recyclerviewlearn.activity
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,7 +9,9 @@ import com.example.recyclerviewlearn.R
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var buttonCallView: Button
+    private lateinit var buttonBasicAdapter: Button
+    private lateinit var buttonMultipleAdapter: Button
+    private lateinit var context: Context
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,14 +20,25 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        buttonCallView = findViewById(R.id.btn_call_basic)
-        buttonCallView.setOnClickListener {
-            callRecyclerView()
+        context = this@MainActivity
+        buttonBasicAdapter = findViewById(R.id.btn_basic_adapter)
+        buttonBasicAdapter.setOnClickListener {
+            callRecyclerBasicActivity()
+        }
+
+        buttonMultipleAdapter = findViewById(R.id.btn_multiple_adapter)
+        buttonMultipleAdapter.setOnClickListener {
+            callRecyclerMultipleActivity()
         }
     }
 
-    private fun callRecyclerView() {
-        val intent = Intent(this@MainActivity, RecyclerBasicActivity::class.java)
+    private fun callRecyclerMultipleActivity() {
+        val intent = Intent(context, RecyclerMultipleActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun callRecyclerBasicActivity() {
+        val intent = Intent(context, RecyclerBasicActivity::class.java)
         startActivity(intent)
     }
 

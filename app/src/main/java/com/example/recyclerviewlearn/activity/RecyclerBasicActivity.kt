@@ -25,7 +25,6 @@ class RecyclerBasicActivity : AppCompatActivity() {
         context = this
         recyclerView = findViewById(R.id.view_recycler)
         recyclerView.layoutManager = GridLayoutManager(context,1)
-
         refreshAdapter(getMembersList())
     }
 
