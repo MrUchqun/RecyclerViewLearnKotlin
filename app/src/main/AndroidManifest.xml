@@ -12,6 +12,8 @@
         android:theme="@style/Theme.RecyclerViewLearn">
         <activity
             android:name=".activity.RecyclerMultipleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".activity.RecyclerBasicActivity"
