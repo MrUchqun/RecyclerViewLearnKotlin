@@ -28,7 +28,7 @@ class RecyclerMultipleActivity : AppCompatActivity() {
     }
 
     private fun getMemberList(): ArrayList<User> {
-        val members: ArrayList<User> = ArrayList<User>()
+        val members: ArrayList<User> = ArrayList()
         for (i in 1..14)
             if (i % 3 == 0) members.add(User(R.drawable.im_acc,"Leo_Messi_$i",true))
             else members.add(User(R.drawable.im_acc,"Cristiano_Ronaldo_$i"))

@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var buttonBasicAdapter: Button
     private lateinit var buttonMultipleAdapter: Button
+    private lateinit var buttonHeaderFooter: Button
     private lateinit var context: Context
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +31,16 @@ class MainActivity : AppCompatActivity() {
         buttonMultipleAdapter.setOnClickListener {
             callRecyclerMultipleActivity()
         }
+
+        buttonHeaderFooter = findViewById(R.id.btn_header_footer)
+        buttonHeaderFooter.setOnClickListener {
+            callHeaderFooterActivity()
+        }
+    }
+
+    private fun callHeaderFooterActivity() {
+        val intent = Intent(context, HeaderFooterActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callRecyclerMultipleActivity() {

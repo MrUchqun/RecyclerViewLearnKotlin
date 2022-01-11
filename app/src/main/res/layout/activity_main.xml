@@ -54,11 +54,12 @@
                 android:gravity="center"
                 android:layout_gravity="center"/>
             <Button
+                android:id="@+id/btn_header_footer"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="5dp"
-                android:text="button"
+                android:text="3. Header and Footer"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 android:fontFamily="casual"

@@ -3,13 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/activity_header_footer.xml" value="0.27447916666666666" />
         <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
         <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/activity_recycler.xml" value="0.22314814814814815" />
         <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/activity_recycler_basic.xml" value="0.27447916666666666" />
         <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/activity_recycler_multiple.xml" value="0.27447916666666666" />
+        <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/item_footer_view.xml" value="0.2864583333333333" />
+        <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/item_header_view.xml" value="0.27447916666666666" />
         <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/item_user_view.xml" value="0.27447916666666666" />
         <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/item_user_view_false.xml" value="0.27447916666666666" />
-        <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/item_user_view_true.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/item_user_view_true.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -11,10 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerViewLearn">
         <activity
-            android:name=".activity.RecyclerMultipleActivity"
+            android:name=".activity.HeaderFooterActivity"
+            android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Design.Light.NoActionBar"
-            android:exported="false" />
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity
+            android:name=".activity.RecyclerMultipleActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".activity.RecyclerBasicActivity"
             android:exported="false"
