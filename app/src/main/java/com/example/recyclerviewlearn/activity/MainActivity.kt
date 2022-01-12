@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonLoadingMore: Button
     private lateinit var buttonInsideRecycler: Button
     private lateinit var buttonNestedScroll: Button
+    private lateinit var buttonGridView: Button
     private lateinit var context: Context
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,6 +55,16 @@ class MainActivity : AppCompatActivity() {
         buttonNestedScroll.setOnClickListener {
             callNestedScrollViewActivity()
         }
+
+        buttonGridView = findViewById(R.id.btn_grid_view)
+        buttonGridView.setOnClickListener {
+            callGridViewActivity()
+        }
+    }
+
+    private fun callGridViewActivity() {
+        val intent = Intent(context, GridViewActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callNestedScrollViewActivity() {
