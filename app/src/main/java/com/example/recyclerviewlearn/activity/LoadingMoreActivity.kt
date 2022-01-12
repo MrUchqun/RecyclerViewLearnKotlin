@@ -16,8 +16,7 @@ class LoadingMoreActivity : AppCompatActivity() {
 
     private lateinit var context: Context
     private lateinit var recyclerView: RecyclerView
-    private lateinit var membersList: ArrayList<User>
-    private var j = 0
+    private var count = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,8 +28,7 @@ class LoadingMoreActivity : AppCompatActivity() {
         context = this
         recyclerView = findViewById(R.id.view_loading_more)
         recyclerView.layoutManager = GridLayoutManager(context,1)
-        membersList = ArrayList()
-        refreshAdapter(getUsers(membersList))
+        refreshAdapter(getUsers())
     }
 
     private fun refreshAdapter(users: ArrayList<User>) {
@@ -39,21 +37,24 @@ class LoadingMoreActivity : AppCompatActivity() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
                 if (!recyclerView.canScrollVertically(1)){
-                    Toast.makeText(context,"There is bottom",Toast.LENGTH_SHORT).show()
+                    if (count < 5){
+                        adapter.setUsers(getUsers())
+                        count++
+                    }
+                    else Toast.makeText(context,"There is bottom",Toast.LENGTH_SHORT).show()
                 }
             }
         })
         recyclerView.adapter = adapter
     }
 
-    private fun getUsers(membersList : ArrayList<User> ): ArrayList<User> {
-        membersList.add(User())
-
-        for (i in 1..14)
-            if (i % 3 == 0) membersList.add(User(R.drawable.im_acc,"Leo_Messi_${j++}"))
-            else membersList.add(User(R.drawable.im_acc,"Cristiano_Ronaldo_${j++}"))
-
-        membersList.add(User())
+    private fun getUsers(): ArrayList<User> {
+        val membersList = ArrayList<User>()
+        membersList.add(User(R.drawable.im_acc,"Leo Messi"))
+        for (i in 1..18)
+            if (i % 3 == 0) membersList.add(User(R.drawable.im_acc,"Leo Messi"))
+            else membersList.add(User(R.drawable.im_acc,"Cristiano Ronaldo"))
+        membersList.add(User(R.drawable.im_acc,"Cristiano Ronaldo"))
         return membersList
     }
 }

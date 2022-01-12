@@ -1,5 +1,6 @@
 package com.example.recyclerviewlearn.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -11,10 +12,16 @@ import com.example.recyclerviewlearn.R
 import com.example.recyclerviewlearn.listener.OnBottomReachedListener
 import com.example.recyclerviewlearn.model.User
 
-class LoadingMoreAdapter(var context: Context, var users: ArrayList<User>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class LoadingMoreAdapter(var context: Context, private var users: ArrayList<User>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val TYPE_HEADER_VIEW = 0
     private val TYP_FOOTER_VIEW = 1
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun setUsers(users: ArrayList<User>){
+        this.users.addAll(users)
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
