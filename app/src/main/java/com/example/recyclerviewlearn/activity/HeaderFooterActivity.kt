@@ -36,8 +36,8 @@ class HeaderFooterActivity : AppCompatActivity() {
         membersList.add(User())
 
         for (i in 1..14)
-            if (i % 3 == 0) membersList.add(User(R.drawable.im_acc,"Leo_Messi_$i"))
-            else membersList.add(User(R.drawable.im_acc,"Cristiano_Ronaldo_$i"))
+            if (i % 3 == 0) membersList.add(User(R.drawable.im_acc,"Leo Messi $i"))
+            else membersList.add(User(R.drawable.im_acc,"Cristiano Ronaldo $i"))
 
         membersList.add(User())
         return membersList
