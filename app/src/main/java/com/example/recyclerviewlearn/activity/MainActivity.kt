@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonHeaderFooter: Button
     private lateinit var buttonLoadingMore: Button
     private lateinit var buttonInsideRecycler: Button
+    private lateinit var buttonNestedScroll: Button
     private lateinit var context: Context
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +49,16 @@ class MainActivity : AppCompatActivity() {
         buttonInsideRecycler.setOnClickListener {
             callInsideRecyclerViewActivity()
         }
+
+        buttonNestedScroll = findViewById(R.id.btn_nested_scroll)
+        buttonNestedScroll.setOnClickListener {
+            callNestedScrollViewActivity()
+        }
+    }
+
+    private fun callNestedScrollViewActivity() {
+        val intent = Intent(context, NestedScrollViewActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callInsideRecyclerViewActivity() {

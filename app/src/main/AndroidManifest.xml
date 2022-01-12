@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerViewLearn">
         <activity
+            android:name=".activity.NestedScrollViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.InsideRecyclerViewActivity"
             android:exported="false" />
         <activity
