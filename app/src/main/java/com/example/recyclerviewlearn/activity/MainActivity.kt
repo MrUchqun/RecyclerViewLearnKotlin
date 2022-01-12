@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonMultipleAdapter: Button
     private lateinit var buttonHeaderFooter: Button
     private lateinit var buttonLoadingMore: Button
+    private lateinit var buttonInsideRecycler: Button
     private lateinit var context: Context
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +43,16 @@ class MainActivity : AppCompatActivity() {
         buttonLoadingMore.setOnClickListener {
             callLoadingMoreActivity()
         }
+
+        buttonInsideRecycler = findViewById(R.id.btn_inside_recycler)
+        buttonInsideRecycler.setOnClickListener {
+            callInsideRecyclerViewActivity()
+        }
+    }
+
+    private fun callInsideRecyclerViewActivity() {
+        val intent = Intent(context, InsideRecyclerViewActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callLoadingMoreActivity() {

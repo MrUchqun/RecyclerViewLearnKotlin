@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_child_item"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="There is child item of RecyclerView"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="#D3D3D3"/>
+
+</FrameLayout>
