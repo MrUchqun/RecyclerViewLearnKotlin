@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonBasicAdapter: Button
     private lateinit var buttonMultipleAdapter: Button
     private lateinit var buttonHeaderFooter: Button
+    private lateinit var buttonLoadingMore: Button
     private lateinit var context: Context
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +37,16 @@ class MainActivity : AppCompatActivity() {
         buttonHeaderFooter.setOnClickListener {
             callHeaderFooterActivity()
         }
+
+        buttonLoadingMore = findViewById(R.id.btn_loading_more)
+        buttonLoadingMore.setOnClickListener {
+            callLoadingMoreActivity()
+        }
+    }
+
+    private fun callLoadingMoreActivity() {
+        val intent = Intent(context,LoadingMoreActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callHeaderFooterActivity() {
