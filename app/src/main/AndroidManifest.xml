@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerViewLearn">
         <activity
+            android:name=".activity.OnClickListenerActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.PageViewActivity"
             android:exported="false" />
         <activity

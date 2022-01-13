@@ -54,9 +54,8 @@ class PageViewActivity : AppCompatActivity() {
                 if (activePosition == RecyclerView.NO_POSITION) return
             }
 
-            override fun onClick(p0: View?) {
-                startActivity(Intent(context,MainActivity::class.java))
-                finish()
+            override fun onClick(p0: View?){
+
             }
         })
     }

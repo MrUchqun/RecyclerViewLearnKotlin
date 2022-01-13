@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonNestedScroll: Button
     private lateinit var buttonGridView: Button
     private lateinit var buttonPageView: Button
+    private lateinit var buttonOnClickList: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,6 +67,16 @@ class MainActivity : AppCompatActivity() {
         buttonPageView.setOnClickListener {
             callPageViewActivity()
         }
+
+        buttonOnClickList = findViewById(R.id.btn_on_click_listener)
+        buttonOnClickList.setOnClickListener{
+            callOnClickListenerActivity()
+        }
+    }
+
+    private fun callOnClickListenerActivity() {
+        val intent = Intent(context,OnClickListenerActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callPageViewActivity() {
