@@ -9,6 +9,7 @@ import com.example.recyclerviewlearn.R
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var context: Context
     private lateinit var buttonBasicAdapter: Button
     private lateinit var buttonMultipleAdapter: Button
     private lateinit var buttonHeaderFooter: Button
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonInsideRecycler: Button
     private lateinit var buttonNestedScroll: Button
     private lateinit var buttonGridView: Button
-    private lateinit var context: Context
+    private lateinit var buttonPageView: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,6 +61,16 @@ class MainActivity : AppCompatActivity() {
         buttonGridView.setOnClickListener {
             callGridViewActivity()
         }
+
+        buttonPageView = findViewById(R.id.btn_page_view)
+        buttonPageView.setOnClickListener {
+            callPageViewActivity()
+        }
+    }
+
+    private fun callPageViewActivity() {
+        val intent = Intent(context,PageViewActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callGridViewActivity() {
