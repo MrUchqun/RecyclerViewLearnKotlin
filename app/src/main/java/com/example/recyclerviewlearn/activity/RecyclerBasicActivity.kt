@@ -28,7 +28,7 @@ class RecyclerBasicActivity : AppCompatActivity() {
         refreshAdapter(getMembersList())
     }
 
-    private fun getMembersList(): ArrayList<User> {
+    public fun getMembersList(): ArrayList<User> {
         val members: ArrayList<User> = ArrayList<User>()
         for (i in 0..14){
             members.add(User(R.drawable.im_acc,"Jack Richer ${i+1}"))

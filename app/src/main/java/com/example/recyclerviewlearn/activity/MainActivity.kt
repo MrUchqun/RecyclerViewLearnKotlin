@@ -5,6 +5,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EdgeEffect
+import android.widget.Toolbar
 import com.example.recyclerviewlearn.R
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonGridView: Button
     private lateinit var buttonPageView: Button
     private lateinit var buttonOnClickList: Button
+    private lateinit var buttonToolbarEffect: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,6 +75,16 @@ class MainActivity : AppCompatActivity() {
         buttonOnClickList.setOnClickListener{
             callOnClickListenerActivity()
         }
+
+        buttonToolbarEffect = findViewById(R.id.btn_toolbar_scroll)
+        buttonToolbarEffect.setOnClickListener {
+            callToolbarScrollActivity()
+        }
+    }
+
+    private fun callToolbarScrollActivity() {
+        val intent = Intent(context,ToolbarScrollActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callOnClickListenerActivity() {
