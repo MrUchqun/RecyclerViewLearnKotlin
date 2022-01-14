@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonPageView: Button
     private lateinit var buttonOnClickList: Button
     private lateinit var buttonToolbarEffect: Button
+    private lateinit var buttonAnim: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -80,6 +81,16 @@ class MainActivity : AppCompatActivity() {
         buttonToolbarEffect.setOnClickListener {
             callToolbarScrollActivity()
         }
+
+        buttonAnim = findViewById(R.id.btn_anim)
+        buttonAnim.setOnClickListener {
+            callRecyclerViewAnimActivity()
+        }
+    }
+
+    private fun callRecyclerViewAnimActivity() {
+        val intent = Intent(context,RecyclerViewAnimActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callToolbarScrollActivity() {
