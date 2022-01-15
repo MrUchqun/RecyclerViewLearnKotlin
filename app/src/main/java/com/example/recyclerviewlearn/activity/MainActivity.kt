@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonOnClickList: Button
     private lateinit var buttonToolbarEffect: Button
     private lateinit var buttonAnim: Button
+    private lateinit var buttonDragSwipe: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -86,6 +87,16 @@ class MainActivity : AppCompatActivity() {
         buttonAnim.setOnClickListener {
             callRecyclerViewAnimActivity()
         }
+
+        buttonDragSwipe = findViewById(R.id.btn_drag_swipe)
+        buttonDragSwipe.setOnClickListener {
+            callDragAndSwipeActivity()
+        }
+    }
+
+    private fun callDragAndSwipeActivity() {
+        val intent = Intent(context,DragAndSwipeActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callRecyclerViewAnimActivity() {
