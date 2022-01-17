@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonAnim: Button
     private lateinit var buttonDragSwipe: Button
     private lateinit var buttonForeground: Button
+    private lateinit var buttonPinterest: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -98,6 +99,16 @@ class MainActivity : AppCompatActivity() {
         buttonForeground.setOnClickListener {
             callForegroundBackgroundActivity()
         }
+
+        buttonPinterest = findViewById(R.id.btn_pinterest_cells)
+        buttonPinterest.setOnClickListener {
+            callPinterestCellsActivity()
+        }
+    }
+
+    private fun callPinterestCellsActivity() {
+        val intent = Intent(context, PinterestCellsActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callForegroundBackgroundActivity() {

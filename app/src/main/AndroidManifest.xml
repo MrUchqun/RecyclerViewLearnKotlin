@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerViewLearn">
         <activity
+            android:name=".activity.PinterestCellsActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ForegroundBackgroundActivity"
             android:exported="false" />
         <activity
