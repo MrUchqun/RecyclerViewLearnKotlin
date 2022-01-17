@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonToolbarEffect: Button
     private lateinit var buttonAnim: Button
     private lateinit var buttonDragSwipe: Button
+    private lateinit var buttonForeground: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -92,6 +93,16 @@ class MainActivity : AppCompatActivity() {
         buttonDragSwipe.setOnClickListener {
             callDragAndSwipeActivity()
         }
+
+        buttonForeground = findViewById(R.id.btn_fore_back_ground)
+        buttonForeground.setOnClickListener {
+            callForegroundBackgroundActivity()
+        }
+    }
+
+    private fun callForegroundBackgroundActivity() {
+        val intent = Intent(context, ForegroundBackgroundActivity::class.java)
+        startActivity(intent)
     }
 
     private fun callDragAndSwipeActivity() {
