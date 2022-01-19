@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.28615384615384615" />
         <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/activity_drag_and_swipe.xml" value="0.27447916666666666" />
         <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/activity_foreground_background.xml" value="0.27447916666666666" />
         <entry key="..\:/AndroidStudioProjects/RecyclerViewLearn/app/src/main/res/layout/activity_grid_view.xml" value="0.27447916666666666" />

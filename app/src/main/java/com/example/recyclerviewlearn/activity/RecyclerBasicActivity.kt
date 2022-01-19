@@ -30,7 +30,7 @@ class RecyclerBasicActivity : AppCompatActivity() {
 
     public fun getMembersList(): ArrayList<User> {
         val members: ArrayList<User> = ArrayList<User>()
-        for (i in 0..14){
+        for (i in 0..20){
             members.add(User(R.drawable.im_acc,"Jack Richer ${i+1}"))
         }
         return members
